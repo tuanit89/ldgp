@@ -1,0 +1,214 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+}
+body {
+	line-height: 1;
+}
+img{max-width:100%; border:none; background:none;}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+strong { font-weight:bold;}
+a, a:hover { text-decoration:none;}
+a[role='button']{cursor: pointer;}
+a[role='button']:hover{opacity: 0.8;}
+@font-face {
+  font-family: UTMAvo;
+  src: url("fonts/UTM Avo.ttf");
+}
+@font-face {
+  font-family: UTMHelveBold;
+  src: url("fonts/UTM HelveBold.ttf");
+}
+.main_content{
+  text-align: center;
+}
+html{height: 100%;width: 100%;}
+#logo{display: block; margin-top: 50px;}
+#logo img{width:550px;}
+.tab-content .tab-pane{
+    display:none;
+}
+.tab-content .tab-pane.show{
+  display:block;
+}
+.register_container{  
+  text-align: center;
+  margin: 0 auto;
+}
+body {
+    font-family: Tahoma, Geneva, sans-serif;
+    font-size: 12px;
+    line-height: 18px;
+    background: #161432  url(images/bg.jpg) center top no-repeat;
+    background-size: cover;
+    color: #cdc39f;
+}
+.main_wrap {
+    position: fixed;
+    z-index: 99;
+    width: 100%;
+    height: 100%;
+    display: block;
+    text-align: center;
+}
+.nav{
+  display: flex;
+  padding: 40px 0 0;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+}
+.nav > li{text-align: center;}
+
+.nav .nav_item{
+  display: inline-block;
+  width: 216px;
+  text-indent: -9999px;
+  height: 65px; 
+  text-decoration: none;
+}
+.tabRegister {
+  background: transparent url(images/sprt_register.png) left bottom no-repeat;  
+}
+.tabRegister.active {
+  background-position:left top;  
+}
+.tabLogin {
+  background: transparent url(images/sprt_login.png) left bottom no-repeat;  
+}
+.tabLogin.active {
+  background-position:left top;  
+}
+
+
+.r_panel{  
+  position: relative;
+  margin-bottom: 10px;
+  background-size: 100%;
+}
+.r_panel_inner{  
+  padding: 30px 0;
+  background-size: 100%;
+}
+.r_control .append-block{
+  float: left;
+  width: 50%;
+  margin: 0;
+  position: relative;
+}
+.r_form{
+    display: inline-block; 
+    position: relative;
+}
+.formTitle{
+  position: absolute;
+  top: -51px;
+  left: 61px;
+  z-index: 99;
+}
+
+.r_error{color:yellow;line-height: 43px;;}
+.r_error .r_control_in{ padding-left: 48px}
+.r_control{position: relative; margin:3px 0;overflow: hidden;}
+.r_bg.r_control::after, .append-block.r_bg:after {position: absolute; content: ''; background: transparent url(images/input-c.png) no-repeat right center;width: 40.9px; height: 100%; top:0; right:0}
+.r_control input {
+  display: block;
+  float: left;
+  width: calc(100% - 95px);
+  border: 0;
+  border: none;
+  background: none;
+  font-family: 'UTMAvo';
+  outline: none;
+  color: #fff;
+  white-space: nowrap;
+  line-height: 58px;  
+  box-sizing: border-box;
+  font-size: 16px;
+}
+.r_control .icon{
+    float: left;
+    padding: 18px 16px 0 54px;
+    width: 16px;
+}
+.r_bg .r_control_in{
+  background: transparent url(images/input.png) no-repeat left center;
+}
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.r_control_in{    
+    overflow: hidden;
+    margin-right: 40px;
+}
+.main_banner img{
+  position: absolute;
+}
+#btnLogin{
+  display:inline-block;
+  margin:25px 0;
+}
+.btnRefreshCaptcha, #captcha{float: left; margin-left: 8px;}
+#captcha{margin-top: 12px;}
+#btnSubmitRegister{display: inline-block;  padding-top: 35px;}
+.btnRefreshCaptcha{float: right;height: 50px}
+.btnRefreshCaptcha img{height: 100%;}
+::-webkit-input-placeholder {color: #9b9467;}
+:-ms-input-placeholder {color: #9b9467;}
+:-moz-input-placeholder {color: #9b9467;}
+:-o-input-placeholder {color: #9b9467;}
+::placeholder {color: #9b9467;}
+.text-center{text-align: center;}
+
+@media screen and (max-width:600px) {  
+    .r_form{min-width: 300px;}
+}
+
+@media screen and (max-height:800px) {
+  #logo {
+      margin-top: 7px;
+  }
+  #logo img{width: 420px;}
+  .nav{
+    padding:15px 0 0;
+  }
+  .r_panel_inner{
+    padding: 10px 0 0;
+  }
+  #btnLogin{
+    margin: 8px 0;
+  }
+  .nav .nav_item img{width: 180px;}
+  #btnSubmitRegister{padding-top: 10px;}
+  .r_control input{    line-height: 51px;}
+}

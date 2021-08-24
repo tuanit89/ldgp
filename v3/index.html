@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <link rel="icon" href="favicon.ico">
+  <title>Tải game King777</title>
+  <meta name="description" content="" />
+  <link rel="stylesheet" href="assets/stylez.css" />
+  <script src="scripts/jquery-1.11.3.min.js"></script>
+</head>
+
+<body>
+  <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+  <div class="main_wrap">
+    <div class="main_content">
+      <a id="logo">
+        <img src="assets/images/logo_mb.png" alt="King77" />
+      </a>
+    </div>
+    
+    <div class="register_container">
+      <ul class="nav" role="tablist">
+        <li><a href="#register" class="tabRegister nav_item" role="tab">Đăng ký</a></li>
+        <li><a href="#login" class="tabLogin nav_item active" role="tab">Đăng nhập</a></li>
+      </ul>
+
+      <div class="tab-content">
+        <div class="tab-pane show" id="register">
+          <form method="post" class="r_form">
+            <div class="r_panel">
+              <div class="r_panel_inner">
+                <div class="r_control r_bg r_padding r_margin">
+                  <img src="assets/images/icon-user.png" class="icon" />
+                  <input type="text" placeholder="Tài khoản (4-16 ký tự)" id="txtUsername" name="txtUsername" />
+                </div>
+                <div class="r_control r_bg r_margin">
+                  <img src="assets/images/icon-password.png" class="icon" />
+                  <input type="password" placeholder="Mật khẩu (6-18 ký tự)" id="txtPassword" name="txtPassword" />
+                </div>
+                <div class="r_control r_bg r_margin">
+                  <img src="assets/images/icon-password.png" class="icon" />
+                  <input type="password" placeholder="Mật khẩu (6-18 ký tự)" id="txtConfirmPassword"
+                    name="txtConfirmPassword" />
+                </div>
+                <div class="r_control r_margin">
+                  <div class="append-block r_bg">
+                    <img src="assets/images/icon-captcha.png" class="icon" />
+                    <input type="text" placeholder="CAPTCHA" id="txtCaptcha" name="txtCaptcha" />
+                  </div>
+                  <img src="assets/images/captcha.jpg" alt="captcha" id="captcha" />
+                  <a role="button" class="btnRefreshCaptcha"><img src="assets/images/btnRefreshCaptcha.png"
+                      alt="" /></a>
+                </div>
+                <!-- <div class="r_control r_bg r_margin r_error">
+                          Tài khoản không hợp lệ
+                        </div> -->
+              </div>
+            </div>
+          </form>
+          <div class="r_control">
+            <a role="button" id="btnRegister"><img src="assets/images/btnRegister.png" /></a>
+          </div>
+        </div>
+        <div class="tab-pane" id="login">
+          <form method="post" class="r_form">
+            <div class="r_panel">
+              <div class="r_panel_inner">
+                <div class="r_control r_bg r_padding r_margin">
+                  <img src="assets/images/icon-user.png" class="icon" />
+                  <input type="text" placeholder="Tài khoản" id="txtUsername" name="txtUsername" />
+                </div>
+                <div class="r_control r_bg r_margin">
+                  <img src="assets/images/icon-password.png" class="icon" />
+                  <input type="password" placeholder="Mật khẩu" id="txtPassword" name="txtPassword" />
+                </div>
+              </div>
+            </div>
+            <div class="r_control">
+              <a role="button" id="btnLogin"><img src="assets/images/btnLogin.png" /></a>
+            </div>
+          </form>
+          <div class="r_control">
+            <a role="button" id="loginFb"><img src="assets/images/facebookLogin.png" /></a>
+          </div>
+        </div>
+      </div>
+      <img src="assets/images/model1.png" alt="" class="model" id="model1" />
+      <img src="assets/images/model2.png" alt="" class="model" id="model2" />
+
+     
+    </div>
+
+  </div>
+
+  <script src="scripts/custom.js"></script>
+</body>
+
+</html>

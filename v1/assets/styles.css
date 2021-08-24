@@ -1,0 +1,184 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+}
+body {
+	line-height: 1;
+}
+img{max-width:100%; border:none; background:none;}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+strong { font-weight:bold;}
+a, a:hover { text-decoration:none;}
+a[role='button']{cursor: pointer;}
+a[role='button']:hover{opacity: 0.8;}
+@font-face {
+  font-family: UTMAvo;
+  src: url("fonts/UTM Avo.ttf");
+}
+@font-face {
+  font-family: UTMHelveBold;
+  src: url("fonts/UTM HelveBold.ttf");
+}
+.main_content{
+  width: 450px;
+  margin:0 auto;
+  text-align: center;
+  position: relative;
+}
+#logo{display: block; margin-top: 39px;}
+.register_container{ 
+  margin-top: 40px; 
+  text-align: center;
+  position: relative;
+}
+body {
+    font-family: Tahoma, Geneva, sans-serif;
+    font-size: 12px;
+    line-height: 18px;
+    background: #161432  url(images/bg.png) center top no-repeat;
+    background-size: 100% auto;
+    color: #cdc39f;
+}
+.main_wrap {
+    position: fixed;
+    z-index: 99;
+    width: 100%;
+    height: 100%;
+    display: block;
+    text-align: center;
+}
+.r_panel{  
+  background: url(images/bgFormBottom.png) bottom left no-repeat;
+  position: relative;
+  margin-bottom: 10px;
+  background-size: 100%;
+}
+.r_panel_inner{  
+  padding: 30px 50px 30px;
+  background: url(images/bgFormTop.png) top left no-repeat;
+  background-size: 100%;
+}
+
+.r_form{
+    position: relative;
+}
+.nav{
+  background: transparent url(images/formTitle.png) no-repeat center center;
+  background-size: 100%;
+  height: 68px;
+  position: absolute;
+  z-index: 99;
+  top: -34px;
+  left: 16%;
+}
+.nav.register{
+  background: transparent url(images/formTitle-dk.png) no-repeat center center;
+  background-size: 100%;
+}
+.nav li{display: inline-block; height: 68px; line-height: 68px; width: 150px;}
+.nav li a{display: block; width: 100%; text-indent: -9999px;}
+.formTitle{
+  position: absolute;
+  top: -51px;
+  left: 61px;
+  z-index: 99;
+}
+.r_error{color:yellow;line-height: 43px;}
+.r_control{overflow: hidden;}
+.r_control .icon {
+  float: left;
+  padding: 4.5px 10px 0 10px;
+}
+.r_margin{
+  margin:10px 0;
+}
+.r_control input {
+  display: block;
+  float: left;
+  width: calc(100% - 60px);
+  border: 0;
+  border: none;
+  background: none;
+  font-family: 'UTMAvo';
+  outline: none;
+  color: #fff;
+  white-space: nowrap;
+  line-height: 41px;
+  box-sizing: border-box;
+}
+.r_control .icon{
+  float: left;
+  padding-left: 10px;
+}
+.r_bg{
+  background-color: #111426;
+  border-radius: 8px;
+}
+.mb_Left, .mb_Right{
+  position: absolute;
+  top: 150px
+}
+.mb_Left{  
+  left: -458px;
+}
+.mb_Right{  
+  right: -458px;
+}
+.append-block{
+  float: left;
+  width: 50%;
+}
+#captcha{
+  float: left;
+  margin: 5px;
+}
+.btnRefreshCaptcha{float: right;}
+.tab-content .tab-pane {display: none;}
+.tab-content .tab-pane.show {display: block;}
+::-webkit-input-placeholder {color: #fff;}
+:-ms-input-placeholder {color: #fff;}
+:-moz-input-placeholder {color: #fff;}
+:-o-input-placeholder {color: #fff;}
+::placeholder {color: #fff;}
+
+
+@media (max-width: 1200px)  {  
+  .mb_Left,.mb_Right{
+    width: 280px;
+  }
+  .mb_Left{  
+    left: -285px;
+  }
+  .mb_Right{  
+    right: -285px;
+  }
+}

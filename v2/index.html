@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>King77 v3</title>
+  <meta name="description" content="" />
+  <link rel="stylesheet" href="assets/styles.css" />
+  <script src="scripts/jquery-1.11.3.min.js"></script>
+</head>
+
+<body>
+  <!--[if lt IE 7]>
+      <p class="browsehappy">
+        You are using an <strong>outdated</strong> browser. Please
+        <a href="#">upgrade your browser</a> to improve your experience.
+      </p>
+    <![endif]-->
+
+  <div class="main_wrap">
+    <div class="main_content">
+      <a id="logo">
+        <img src="assets/images/logo_pc.png" alt="King77" />
+      </a>
+    </div>
+    <div class="register_container">
+      <div class="r_form">
+        <ul class="nav" role="tablist">
+          <li><a href="#register" class="tabRegister nav_item active" role="tab">Đăng ký</a></li>
+          <li><a href="#login" class="tabLogin nav_item" role="tab">Đăng nhập</a></li>
+        </ul>
+
+        <div class="r_panel">
+          <div class="r_panel_inner">
+            <div class="tab-content">
+              <div class="tab-pane show" id="register">
+                <form method="post" id="frmRegister" role="form">
+                  <div class="r_control r_bg r_padding r_margin">
+                    <div class="r_control_in">
+                      <img src="assets/images/icon-user.png" class="icon" />
+                      <input type="text" placeholder="Tài khoản (4-16 ký tự)" id="txtUsername" name="txtUsername" />
+                    </div>
+                  </div>
+                  <div class="r_control r_bg r_margin">
+                    <div class="r_control_in">
+                      <img src="assets/images/icon-password.png" class="icon" />
+                      <input type="password" placeholder="Mật khẩu (6-18 ký tự)" id="txtPassword" name="txtPassword" />
+                    </div>
+                  </div>
+                  <div class="r_control r_bg r_margin">
+                    <div class="r_control_in">
+                      <img src="assets/images/icon-password.png" class="icon" />
+                      <input type="password" placeholder="Mật khẩu (6-18 ký tự)" id="txtConfirmPassword"
+                        name="txtConfirmPassword" />
+                    </div>
+                  </div>
+              <div class="r_control r_margin">
+                <div class="append-block r_bg">
+                  <div class="r_control_in">
+                    <img src="assets/images/icon-captcha.png" class="icon"  style="width:22px" />
+                    <input type="text" placeholder="CAPTCHA" id="txtCaptcha" name="txtCaptcha" />
+                  </div>
+                </div>
+                <img src="assets/images/captcha.jpg" alt="captcha" id="captcha"/>
+                <a role="button" class="btnRefreshCaptcha"><img src="assets/images/btnRefreshCaptcha.png" alt="" /></a>
+              </div>              
+              <div class="text-center">
+                  <a role="button" id="btnSubmitRegister"><img src="assets/images/btnRegister1.png" alt="" /></a>
+              </div>
+              </form>
+            </div>
+            <div class="tab-pane" id="login">
+              <form method="post" id="frmLogin" role="form">
+                <div class="r_control r_bg r_padding r_margin">
+                  <div class="r_control_in">
+                    <img src="assets/images/icon-user.png" class="icon" />
+                    <input type="text" placeholder="Tài khoản" id="txtUsername" name="txtUsername" />
+                  </div>
+                </div>
+                <div class="r_control r_bg r_margin">
+                  <div class="r_control_in">
+                    <img src="assets/images/icon-password.png" class="icon" />
+                    <input type="password" placeholder="Mật khẩu" id="txtUsername" name="txtPassword" />
+                  </div>
+                </div>
+                <div class="r_control r_bg r_margin r_error">
+                  <div class="r_control_in">
+                      Tài khoản không hợp lệ
+                  </div>
+                </div>
+                <div class="r_control">
+                  <a role="button" id="btnLogin"><img src="assets/images/btnLogin.png" /></a>
+                </div>
+                <div class="r_control">
+                  <a role="button" id="fbLogin"><img src="assets/images/facebookLogin.png" /></a>
+                </div>
+              </form>
+            </div>       
+          </div>
+        </div>
+      </div>
+      </form>
+    </div>
+  </div>
+
+  <script src="scripts/custom.js"></script>
+</body>
+
+</html>
